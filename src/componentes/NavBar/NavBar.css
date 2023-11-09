@@ -1,0 +1,31 @@
+
+.listado{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    background-color:#0A0908; 
+    padding: 1rem;
+    
+}
+
+.item >a{
+    text-decoration: none;
+    color: #F2F4F3;
+    padding: 1rem;
+}
+
+.item>a:hover{
+   color: #22333B;
+   font-size: 1.1rem;
+}
+
+.logo>a{
+    text-decoration: none;
+    color: #F2F4F3;
+}
+
+.imgLogo{
+    width: 60px;
+    height: auto; 
+}

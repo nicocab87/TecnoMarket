@@ -1,0 +1,13 @@
+.greeting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greetingLetra{
+    font-size: 3rem;
+    margin: 1rem;
+    color:#22333B;
+
+
+}
