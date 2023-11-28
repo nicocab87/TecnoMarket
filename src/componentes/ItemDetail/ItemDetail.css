@@ -1,9 +1,14 @@
+.detalle{
+    background-color:#22333B;
+}
+
 .productoDetalle {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, .75fr);
+    grid-template-rows: repeat(6, .65fr);
     grid-column-gap: 0px;
     grid-row-gap: 8px;
+    background-color: #F2F4F3;
     }
     
     .div1 { grid-area: 1 / 1 / 7 / 2; }
@@ -15,7 +20,9 @@
 
 .imgProductoDetalle{
     align-self: center;
-    box-sizing:content-box;
-    margin: 1rem;
-    width: 300px;
+    padding: 4rem;
+}
+
+.tituloProductoDetalle{
+    padding: 1rem;
 }
