@@ -15,7 +15,7 @@ function ItemCount({stock, initial, onAdd}) {
     }
 
   return (
-    <div className='counter'>
+    <div className='counter div5'>
         <div className='controls buttons are-small'>
             <button className='boton button is-info is-inverted' onClick={decrement}>-</button>
             <h4 className='numero'>{quantity} </h4>

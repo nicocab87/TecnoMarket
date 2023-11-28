@@ -10,7 +10,7 @@ function Producto({id, title, price, description, image}) {
         <article className='producto'>
             <h1 className='tituloProducto'>{title}</h1>
             <img className='imgProducto' src={image} alt={title}/>
-            <Link to={`/item/${id}`} className='button is-info'>Detalles</Link>
+            <Link to={`/productos/${id}`} className='button is-info'>Detalles</Link>
             <h3 className='precioProducto'>${price}</h3>
             <ItemCount initial={1} stock={10} onAdd={(quantity)=> console.log(`cantidad agregada ${quantity}`)} />
         </article>
