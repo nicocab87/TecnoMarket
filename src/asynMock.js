@@ -4,6 +4,7 @@ const listaProductos = [{"id":"1","title":"Fjallraven - Foldsack No. 1 Backpack,
 
 export default listaProductos
 
+
 export const getProducts = ()=>{
     return new Promise ((resolve)=>{
         setTimeout(()=>{
@@ -27,3 +28,4 @@ export const getProductsByCategory = (productCategory) => {
         }, 500)
     })
 }
+

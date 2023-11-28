@@ -1,6 +1,7 @@
 import React from 'react';
 import "./PaginaPrincipal.css";
 
+
 function PaginaPrincipal() {
     const logo = "../ItemListContainer/assets/logo.png"
   return (
@@ -10,7 +11,7 @@ function PaginaPrincipal() {
             <h3 className='subtitulo subtitle is-4'>Lo mejor del mundo tecnologia lo encontras acá</h3>
         </div>
         <div className='div2'>
-            <img src={logo} />
+            
         </div>
     </div>     
   )
