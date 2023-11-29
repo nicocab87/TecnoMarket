@@ -11,12 +11,12 @@
     background-color: #F2F4F3;
     }
     
-    .div1 { grid-area: 1 / 1 / 7 / 2; }
-    .div2 { grid-area: 1 / 2 / 2 / 3; }
-    .div3 { grid-area: 2 / 2 / 4 / 3; }
-    .div4 { grid-area: 4 / 2 / 5 / 3; }
-    .div5 { grid-area: 5 / 2 / 6 / 3; }
-    .div6 { grid-area: 6 / 2 / 7 / 3; }
+    .div1Detalle { grid-area: 1 / 1 / 7 / 2; }
+    .div2Detalle { grid-area: 1 / 2 / 2 / 3; }
+    .div3Detalle { grid-area: 2 / 2 / 4 / 3; }
+    .div4Detalle { grid-area: 4 / 2 / 5 / 3; }
+    .div5Detalle { grid-area: 5 / 2 / 6 / 3; }
+    .div6Detalle { grid-area: 6 / 2 / 7 / 3; }
 
 .imgProductoDetalle{
     align-self: center;
