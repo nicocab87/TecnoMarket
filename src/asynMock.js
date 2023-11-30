@@ -29,3 +29,5 @@ export const getProductsByCategory = (productCategory) => {
     })
 }
 
+export const photosCarrusel = listaProductos.filter((prod)=>prod.rating.rate>4)
+

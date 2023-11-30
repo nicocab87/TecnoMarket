@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import "./PaginaPrincipal.css";
-
+import logo from "../ItemListContainer/assets/logo.png"
+import DemoCarousel from '../Carrusel/Carrusel';
 
 function PaginaPrincipal() {
-    const logo = "../ItemListContainer/assets/logo.png"
+    
   return (
     <div className='paginaPrincipal'>
         <div className='tituloDiv div1'>
@@ -11,7 +12,7 @@ function PaginaPrincipal() {
             <h3 className='subtitulo subtitle is-4'>Lo mejor del mundo tecnologia lo encontras acá</h3>
         </div>
         <div className='div2'>
-            
+            <DemoCarousel />
         </div>
     </div>     
   )
