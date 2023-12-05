@@ -11,7 +11,7 @@ class DemoCarousel extends Component {
                 {photosCarrusel.map((prod)=>{
                     return (
                         <div className='carrusel' key={prod.id}>
-                            <img className='imgCarrusel' src={prod.image} />
+                            <img  src={prod.image} />
                             <p className="legend">{prod.title}</p>
                         </div>
                     )
