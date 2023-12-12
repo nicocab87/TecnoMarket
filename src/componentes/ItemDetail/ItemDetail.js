@@ -3,6 +3,7 @@ import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
 import "./ItemDetail.css";
 import { CartContext } from '../../context/CartContext';
+import "bulma/css/bulma.css"
 
 function ItemDetail({id,title,price, image, description, stock}) {
   const [quantityAdded, setQuantyAdded] = useState(0);
@@ -20,7 +21,7 @@ function ItemDetail({id,title,price, image, description, stock}) {
 
   return (
     <div className='detalle'>
-      <div className='productoDetalle'>
+      <div className='productoDetalle '>
               <h1 className='tituloProductoDetalle div2Detalle title is-2'>{title}</h1>
               <img className='imgProductoDetalle div1Detalle' src={image} alt={title}/>
               <h2 className='descripcionProducto div3Detalle subtitle is-4'>{description}</h2>

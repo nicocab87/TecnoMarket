@@ -6,7 +6,6 @@ export const CartContext = createContext({
 
 export const CartProvider = ({children}) => {
     const [cart, setCart]= useState([]);
-    const [cantidad, setCantidad] = useState (0)
     console.log (cart)
 
     const addItem = (item,quantity) => {
@@ -31,11 +30,13 @@ export const CartProvider = ({children}) => {
     }
 
     const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0);
+
+    const total = cart.reduce((total, item) => total + item.price, 0)
        
 
 
     return (
-        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart, totalQuantity}}>
+        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart, totalQuantity, total}}>
             {children}
         </CartContext.Provider>
     )

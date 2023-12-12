@@ -1,0 +1,15 @@
+.productoCarrito{
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 2rem;
+grid-row-gap: 0px;
+align-items: center;
+justify-items: center;
+margin: 1rem;
+}
+
+.tituloCarrito { grid-area: 1 / 1 / 2 / 2; }
+.imgCarrito{ grid-area: 1 / 2 / 2 / 3; }
+.cantidadCarrito { grid-area: 1 / 3 / 2 / 4; }
+.precioCarrito { grid-area: 1 / 4 / 2 / 5; }
