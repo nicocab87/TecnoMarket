@@ -9,18 +9,21 @@ const Cart = ()=> {
 
     if(totalQuantity===0){
         return(
-            <div>
-                <h1>No hay items en el carrito todavia!</h1>
-                <Link to='/productos' className='button'>Productos</Link>
+            <div className='hero is-large'>
+                <div className='hero-body is-flex-direction-column is-justify-content-space-evenly is-align-content-center box'>
+                    <h1 className='subtitle is-3'>No hay items en el carrito todavia!</h1>
+                    <h2 className='subtitle is-4'>Ve y agrega algo!</h2>
+                    <Link to='/productos' className='button subtitle is-5'>Productos</Link>
+                </div>
             </div>
         )
     }
   return (
     <div className='cart'>
         <CartItem className="cartItem"/>
-        <h3 className='totalAndClearCart'>total: ${total}</h3>
-        <button onClick={()=> clearCart()} className='Button'>Limpiar carrito </button>
-        <Link className='pagarCart' to='/checkout'>checkout</Link>
+        <h3 className='totalCart subtitle is-6'>total a pagar: ${total}</h3>
+        <button onClick={()=> clearCart()} className='button'>Limpiar carrito </button>
+        <Link className='pagarCart button is-red' to='/checkout'>checkout</Link>
     </div>
   )
 }

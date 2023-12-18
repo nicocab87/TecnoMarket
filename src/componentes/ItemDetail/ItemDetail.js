@@ -20,14 +20,14 @@ function ItemDetail({id,title,price, image, description, stock}) {
   }
 
   return (
-    <div className='detalle'>
-      <div className='productoDetalle '>
+    <div className='detalle hero'>
+      <div className='productoDetalle hero-body'>
               <h1 className='tituloProductoDetalle div2Detalle title is-2'>{title}</h1>
               <img className='imgProductoDetalle div1Detalle' src={image} alt={title}/>
               <h2 className='descripcionProducto div3Detalle subtitle is-4'>{description}</h2>
               <Link to="/productos" className='button is-info div6Detalle'>Volver</Link>
               <h3 className='precioProductoDetalle div4Detalle subtitle is-5'> ${price} </h3>
-              {(quantityAdded > 0 ) ? (<Link to='/cart'>Terminar compra</Link>) : 
+              {(quantityAdded > 0 ) ? (<Link to='/cart' className='button is-success is-outlined button'>Terminar compra</Link>) : 
               (<ItemCount initial={0}  stock={stock}  onAdd={handleOnAdd}/>)}
       </div>
     </div>

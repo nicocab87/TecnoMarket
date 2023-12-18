@@ -9,7 +9,7 @@ function PaginaPrincipal() {
 /*   const itemsCollectionRef = collection(db, "items") */
     
   return (
-    <div className='paginaPrincipal'>
+    <div className='paginaPrincipal hero is-large'>
         <div className='tituloDiv div1'>
           <h1 className='titulo title is-3'>Bienvenidos a TecnoMarket!</h1>
           <h3 className='subtitulo subtitle is-4'>Lo mejor del mundo tecnologia lo encontras acá</h3>

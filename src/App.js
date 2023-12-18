@@ -7,6 +7,7 @@ import Productos from "./pages/Productos";
 import Home from "./pages/Home";
 import { CartProvider } from "./context/CartContext";
 import Cart from "./componentes/Cart/Cart";
+import NotFound from "./pages/NotFound";
 
 export default function App (){
     return(
@@ -20,7 +21,7 @@ export default function App (){
                         <Route path="/categoria/:categoriaId" element={<ItemListContainer/>} />
                         <Route path="/productos/:itemId" element={<ItemDetailContainer/>} />
                         <Route path="/cart" element={<Cart/>} />
-                        <Route path="*" element={<h1>Lo siento! No se ha podido encontrar la pagina</h1>} />
+                        <Route path="*" element={<NotFound/>} />
                     </Routes>
                 </CartProvider>
             </BrowserRouter>
