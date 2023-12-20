@@ -7,31 +7,29 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../../Config/Firebase"
 
 const ItemListContainer = ({greeting})=> {
-    const [productos, setProductos] = useState ([]);
+    const [ItemList, setItemList] = useState ([]);
     const [loading, setLoading] = useState (true);
     const {categoriaId} = useParams();
 
+    const itemCollectionRef = collection( db, 'items')
+
     useEffect(() => {
-        setLoading(true)
+        const getItemList = async () => {
+            const data = await getDocs (itemCollectionRef);
+            const filteredData = data.docs.map ( (doc)=>({
+                ...doc.data(),
+                id: doc.id
+            }));
+            
+            setItemList(filteredData);
+        }
+        getItemList();
+       
+    },[])
 
-        const collectionRef = categoriaId ? query(collection(db, 'items'), where('category', '==', categoriaId)) : collection(db, 'items')
-
-        getDocs(collectionRef)
-        .then(response => {
-            const productAdapted = response.docs.map (doc => {
-                const data = doc.data()
-                return {id: doc.id, ...data}
-
-            })
-            setProductos (productAdapted)
-        })
-        .catch(error => {
-            console.error(error)
-        })
-        .finally( ()=> {
-            setLoading(false)
-        })
-    }, [])
+    return(
+        <ListaProductos productos={ItemList}/>
+    )
 }
 
 export default ItemListContainer

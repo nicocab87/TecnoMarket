@@ -19,6 +19,8 @@ function ItemDetail({id,title,price, image, description, stock}) {
     addItem(item, quantity)
   }
 
+  
+
   return (
     <div className='detalle hero'>
       <div className='productoDetalle hero-body'>

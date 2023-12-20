@@ -5,7 +5,7 @@ import "./CartItem.css"
 import "../Cart/Cart.css"
 
 function CartItem() {
-  const {cart}= useContext(CartContext)
+  const {cart,removeItem}= useContext(CartContext)
   return (
     <div>
       {cart.map((item)=>{
@@ -15,6 +15,8 @@ function CartItem() {
             <img src={item.image} alt={item.title} className='image is-64x64 imgCarrito'/>
             <div className='cantidadCarrito'>x{item.quantity}</div>
             <div className='precioCarrito'>${item.price * item.quantity} </div>
+            <button onClick={()=>removeItem(item.id)} className='button'>X</button>
+            
            </div>
 
         )
