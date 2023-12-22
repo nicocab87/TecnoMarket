@@ -12,8 +12,6 @@ export default function NavBar(){
                     <li className="logo"><NavLink to="/">TECNOMARKET </NavLink></li>
                     <li className="item"><NavLink to="/">Inicio</NavLink></li>
                     <li className="item"><NavLink to="productos">Producto</NavLink></li>
-                    <li className="item"><NavLink to="nosotros">Sobre Nosotros</NavLink></li>
-                    <li className="item"><NavLink to="sucursales">Sucursales</NavLink></li>
                     <CartWidget/>
                 </ul>
         </nav>

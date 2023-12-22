@@ -3,6 +3,8 @@ import { CartContext } from '../../context/CartContext'
 import "bulma/css/bulma.css"
 import "./CartItem.css"
 import "../Cart/Cart.css"
+import { MdOutlineCancel } from "react-icons/md";
+
 
 function CartItem() {
   const {cart,removeItem}= useContext(CartContext)
@@ -15,7 +17,7 @@ function CartItem() {
             <img src={item.image} alt={item.title} className='image is-64x64 imgCarrito'/>
             <div className='cantidadCarrito'>x{item.quantity}</div>
             <div className='precioCarrito'>${item.price * item.quantity} </div>
-            <button onClick={()=>removeItem(item.id)} className='button'>X</button>
+            <MdOutlineCancel onClick={()=>removeItem(item.id)} className='removeItem' />
             
            </div>
 
